@@ -1,0 +1,24 @@
+<mvc:View
+    controllerName="invoicescanner.project1.controller.View1"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.ui.unified"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    class="viewPadding"
+>
+    <l:VerticalLayout>
+        <u:FileUploader
+            id="fileUploader"
+      name="myFileUpload"
+      tooltip="Upload your file to the local server"
+      change="onFileChange"
+      fileType="jpg,png,jpeg,pdf"
+      sameFilenameAllowed="true"
+      style="Emphasized"
+        />
+        <Button
+            text="Upload File"
+            press="onUploadPress"
+        />
+    </l:VerticalLayout>
+</mvc:View>
